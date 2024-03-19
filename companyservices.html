@@ -1,3 +1,6 @@
+Apologies for the oversight. To make the background color of the title match the rest of the page, you can apply the same background color to the `h1` element. Here's the updated code:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,17 +11,17 @@
         body {
             margin: 0;
             padding: 0;
-        }
-        .section {
-            padding: 20px;
-            background-color: #BC8F8F; /* Background color applied to the section */
-        }
-        h1, .section-title {
-            font-family: 'Times New Roman', Times, serif;
+            background-color: #BC8F8F; /* Background color applied to the entire page */
         }
         h1 {
             text-align: center;
             color: white;
+            background-color: #BC8F8F; /* Background color applied to the title */
+            padding: 10px; /* Adding padding for better readability */
+        }
+        .section {
+            padding: 20px;
+            background-color: #BC8F8F; /* Background color applied to the sections */
         }
         h2 {
             color: #48494B;
@@ -53,7 +56,7 @@
     </ul>
 </div>
 
-<div class="section"> <!-- Removed inline style -->
+<div class="section">
     <h2 class="section-title">American Cuisine</h2>
     <font color="white" size="3">
         <p>America has a rich culinary tradition with dishes like burgers, fries, BBQ, and more. Our American cuisine cooking classes will teach you how to master these classics and put your own twist on them.</p>
@@ -73,7 +76,7 @@
     </div>
 </div>
 
-<div class="section"> <!-- Removed inline style -->
+<div class="section">
     <h2 class="section-title">Asian Cuisine</h2>
     <font color="white" size="3">
         <p>Asian cuisine encompasses a wide range of flavors and techniques. From sushi to stir-fries, our Asian cuisine cooking classes will introduce you to the diverse and delicious world of Asian cooking.</p>
@@ -93,7 +96,7 @@
     </div>
 </div>
 
-<div class="section"> <!-- Removed inline style -->
+<div class="section">
     <h2 class="section-title">Hispanic Cuisine</h2>
     <font color="white" size="3">
         <p>Hispanic cuisine is known for its bold flavors and colorful ingredients. Join our Hispanic cuisine cooking classes to learn how to make mouthwatering dishes like tacos, paella, and empanadas.</p>
@@ -108,10 +111,4 @@
         <span>Paella</span>
     </div>
     <div class="dish">
-        <img src="images/hispanic_empanadas.jpg" alt="Hispanic Empanadas">
-        <span>Empanadas</span>
-    </div>
-</div>
-
-</body>
-</html>
+        <img src

@@ -8,38 +8,51 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #BC8F8F; /* Background color applied to the entire page */
-            font-family: 'Times New Roman', serif; /* Default font family */
-        }
-        h1, h2, h3, .section-title {
-            color: #48494B; /* Changing color of all headings */
-            font-family: Verdana, sans-serif; /* Font family for all headings */
+            background-color: #BC8F8F;
+            font-family: 'Times New Roman', serif;
         }
         h1 {
             text-align: center;
-            background-color: #BC8F8F; /* Background color applied to the title */
-            padding: 10px; /* Adding padding for better readability */
-            font-family: 'Verdana', sans-serif; /* Font family for the title */
-            color: black; /* Change title color to black */
-            font-family: 'Times New Roman', serif; /* Change title font to Times New Roman */
+            background-color: #BC8F8F;
+            margin-top: 0; /* Reduced space above the title */
+            padding: 5px 0; /* Reduced padding for the title */
+            font-size: 36px; /* Increased font size for the title */
+            color: black;
+            font-family: 'Verdana', sans-serif;
         }
         .section {
-            padding: 20px;
-            background-color: #BC8F8F; /* Background color applied to the sections */
+            padding: 10px 20px; /* Adjusted padding for less space */
+            background-color: #BC8F8F;
+            text-align: center; /* Center align content for even spacing */
         }
         .section-title {
             text-decoration: underline;
+            margin-bottom: 10px; /* Reduced space below section titles */
         }
         ul {
             list-style-type: disc;
             color: white;
-            margin-left: 20px;
+            padding-left: 20px; /* Ensure list is indented */
         }
         .bold {
             font-weight: bold;
         }
-        p, span {
-            font-family: 'Times New Roman', serif; /* Font family for the content */
+        p, span, a, font {
+            font-family: 'Times New Roman', serif;
+        }
+        .dish {
+            margin: 0 10px; /* Adjusted margins for even spacing of images */
+            display: inline-flex; /* Align images and text vertically */
+            flex-direction: column; /* Stack image and text */
+            align-items: center; /* Center text below image */
+        }
+        img {
+            max-width: 100%; /* Ensures images are not larger than their container */
+            height: auto; /* Keeps image aspect ratio */
+        }
+        a {
+            color: white; /* Ensure links are white */
+            text-decoration: underline; /* Style for links */
         }
     </style>
 </head>
@@ -59,86 +72,92 @@
 
 <div class="section">
     <h2 class="section-title">American Cuisine</h2>
-    <font color="white" size="3">
-        <p>America has a rich culinary tradition with dishes like burgers, fries, BBQ, and more. Our American cuisine cooking classes will teach you how to master these classics and put your own twist on them.</p>
-    </font>
+    <p>America has a rich culinary tradition with dishes like burgers, fries, BBQ, and more. Our American cuisine cooking classes will teach you how to master these classics and put your own twist on them.</p>
     <h3 class="section-title">Available Dishes</h3>
-    <div class="dish">
-        <img src="images/american_burger.jpg" alt="American Burger" height="200" width="200" />
-        <span>Burger</span>
-    </div>
-    <div class="dish">
-        <img src="images/american_fries.jpg" alt="American Fries" height="200" width="200" />
-        <span>Fries</span>
-    </div>
-    <div class="dish">
-        <img src="images/american_bbq.jpg" alt="American BBQ" height="200" width="200" />
-        <span>BBQ</span>
+    <div>
+        <div class="dish">
+            <img src="american_burger.jpeg" alt="American Burger" />
+            <span>Burger</span>
+        </div>
+        <div class="dish">
+            <img src="american_fries.jpeg" alt="American Fries" />
+            <span>Fries</span>
+        </div>
+        <div class="dish">
+            <img src="american_bbq.jpeg" alt="American BBQ" />
+            <span>BBQ</span>
+        </div>
     </div>
 </div>
 
 <div class="section">
     <h2 class="section-title">Asian Cuisine</h2>
-    <font color="white" size="3">
-        <p>Asian cuisine encompasses a wide range of flavors and techniques. From sushi to stir-fries, our Asian cuisine cooking classes will introduce you to the diverse and delicious world of Asian cooking.</p>
-    </font>
+    <p>Asian cuisine encompasses a wide range of flavors and techniques. From sushi to stir-fries, our Asian cuisine cooking classes will introduce you to the diverse and delicious world of Asian cooking.</p>
     <h3 class="section-title">Available Dishes</h3>
-    <div class="dish">
-        <img src="images/asian_sushi.jpg" alt="Asian Sushi" height="200" width="200" />
-        <span>Sushi</span>
-    </div>
-    <div class="dish">
-        <img src="images/asian_stirfry.jpg" alt="Asian Stir-fry" height="200" width="200" />
-        <span>Stir-fry</span>
-    </div>
-    <div class="dish">
-        <img src="images/asian_curry.jpg" alt="Asian Curry" height="200" width="200" />
-        <span>Curry</span>
+    <div>
+        <div class="dish">
+            <img src="asian_sushi.jpeg" alt="Asian Sushi" />
+            <span>Sushi</span>
+        </div>
+        <div class="dish">
+            <img src="asian_stirfry.jpeg" alt="Asian Stir-fry" />
+            <span>Stir-fry</span>
+        </div>
+        <div class="dish">
+            <img src="asian_curry.jpeg" alt="Asian Curry" />
+            <span>Curry</span>
+        </div>
     </div>
 </div>
 
 <div class="section">
     <h2 class="section-title">Hispanic Cuisine</h2>
-    <font color="white" size="3">
-        <p>Hispanic cuisine is known for its bold flavors and colorful ingredients. Join our Hispanic cuisine cooking classes to learn how to make mouthwatering dishes like tacos, paella, and empanadas.</p>
-    </font>
+    <p>Hispanic cuisine is known for its bold flavors and colorful ingredients. Join our Hispanic cuisine cooking classes to learn how to make mouthwatering dishes like tacos, paella, and empanadas.</p>
     <h3 class="section-title">Available Dishes</h3>
-    <div class="dish">
-        <img src="images/hispanic_tacos.jpg" alt="Hispanic Tacos" height="200" width="200" />
-        <span>Tacos</span>
-    </div>
-    <div class="dish">
-        <img src="images/hispanic_paella.jpg" alt="Hispanic Paella" height="200" width="200" />
-        <span>Paella</span>
-    </div>
-    <div class="dish">
-        <img src="images/hispanic_empanadas.jpg" alt="Hispanic Empanadas" height="200" width="200" />
-        <span>Empanadas</span>
+    <div>
+        <div class="dish">
+            <img src="hispanic_tacos.jpeg" alt="Hispanic Tacos" />
+            <span>Tacos</span>
+        </div>
+        <div class="dish">
+            <img src="hispanic_paella.jpeg" alt="Hispanic Paella" />
+            <span>Paella</span>
+        </div>
+        <div class="dish">
+            <img src="hispanic_empanadas.jpeg" alt="Hispanic Empanadas" />
+            <span>Empanadas</span>
+        </div>
     </div>
 </div>
 
-<div class="section" style="background-color: #BC8F8F;">
-    <h2 class="section-title bold" style="font-family: Times New Roman, sans-serif; color: black; text-decoration: underline;">Customer Resources</h2>
-    <p style="font-style: italic; color: white; font-family: 'Times New Roman', serif;">If you are interested in booking a class, please take a look at our pricing as well as our selection of chefs that will be instructing the classes.</p>
-    <h3 class="section-title bold" style="font-family: Times New ROman, sans-serif; color: black; text-decoration: underline;">Steps to Take</h3>
-    <ol style="color: white; font-family: 'Times New Roman', serif; font-style: italic;">
-        <li>Reflect on your lifestyle and decide how many courses you would like to learn how to prepare</li>
-        <li>Take a look at our pricing page</li>
-        <li>Choose a chef and type of cuisine</li>
+<div class="section">
+    <h2 class="section-title bold">Customer Resources</h2>
+    <p>If you are interested in booking a class, please take a look at our pricing as well as our selection of chefs that will be instructing the classes.</p>
+    <h3 class="section-title bold">Steps to Take</h3>
+    <ol>
+        <li>Reflect on your lifestyle and decide how many courses you would like to take.</li>
+        <li>Take a look at our pricing page.</li>
+        <li>Choose a chef and type of cuisine.</li>
         <li>Contact us to reserve a booking!</li>
     </ol>
 </div>
-<!-- Links -->
-    <div style="clear:both;">
-        <br><br>
-     
-    <p><a href="mailto:pearsoni@purdue.edu" style="color: white; text-decoration: none; padding: 10px 20px; background-color: #BC8F8F; border: 1px solid white; border-radius: 5px;">Contact Us!</a></p>
 
-    <!-- Last Modified Date -->
-This document was last modified:</p>
-<p id="time" style="font-size:vw;">
-    <script>
-    let text = document.lastModified; document.getElementById("time").innerHTML = text;
-    </script>
+<!-- Links -->
+<p><u><b>Pricing of Cooking Classes:</b></u> <a href="https://docs.google.com/document/d/1TwQsSTvWRB6r8cQCkNjBxGLZXKldST9zT2xEOXs97ZI/edit?usp=sharing" target="_blank">Cooking Class Information</a></p>
+
+<h2><u><b>Download the List of our Chefs!</b></u></h2>
+<a href="Chefs.pdf" target="_blank">Chef List (PDF)</a>
+
+<p><a href="mailto:pearsoni@purdue.edu" style="text-decoration: none; padding: 10px 20px; background-color: #BC8F8F; border: 1px solid white; border-radius: 5px;">Contact Us!</a></p>
+
+<!-- Last Modified Date -->
+<p>This document was last modified:</p>
+<p id="time"></p>
+<script>
+let text = document.lastModified;
+document.getElementById("time").innerHTML = text;
+</script>
+
 </body>
 </html>
+

@@ -42,9 +42,9 @@
             color: white; /* Ensures text is visible against the background */
         }
         .dish {
-            margin: 0 10px 20px 0; /* Adjusted margin for even spacing and alignment */
-            display: inline-flex;
-            flex-direction: column;
+            margin-bottom: 20px; /* Adjusted margin for even spacing */
+            display: flex;
+            justify-content: space-around;
             align-items: center;
         }
         img {
@@ -117,15 +117,16 @@
     <div>
         <div class="dish">
             <img src="hispanic_tacos.jpg" alt="Hispanic Tacos" height="200" width="200" />
-        <span>Tacos</span>
-    </div>
-    <div class="dish">
-        <img src="images/hispanic_paella.jpg" alt="Hispanic Paella" height="200" width="200" />
-        <span>Paella</span>
-    </div>
-    <div class="dish">
-        <img src="images/hispanic_empanadas.jpg" alt="Hispanic Empanadas" height="200" width="200" />
-        <span>Empanadas</span>
+            <span>Tacos</span>
+        </div>
+        <div class="dish">
+            <img src="hispanic_paella.jpg" alt="Hispanic Paella" height="200" width="200" />
+            <span>Paella</span>
+        </div>
+        <div class="dish">
+            <img src="hispanic_empanadas.jpg" alt="Hispanic Empanadas" height="200" width="200" />
+            <span>Empanadas</span>
+        </div>
     </div>
 </div>
 
@@ -140,18 +141,17 @@
         <li>Contact us to reserve a booking!</li>
     </ol>
 </div>
-<!-- Links -->
-    <div style="clear:both;">
-        <br><br>
-     
-    <p><a href="mailto:pearsoni@purdue.edu" style="color: white; text-decoration: none; padding: 10px 20px; background-color: #BC8F8F; border: 1px solid white; border-radius: 5px;">Contact Us!</a></p>
 
-    <!-- Last Modified Date -->
-This document was last modified:</p>
+<div style="clear:both;">
+    <br><br>
+    <p><a href="mailto:pearsoni@purdue.edu" style="color: white; text-decoration: none; padding: 10px 20px; background-color: #BC8F8F; border: 1px solid white; border-radius: 5px;">Contact Us!</a></p>
+</div>
+
+<!-- Last Modified Date -->
+<p>This document was last modified:</p>
 <p id="time" style="font-size:vw;">
     <script>
-    let text = document.lastModified; document.getElementById("time").innerHTML = text;
-    </script>
+        let text = document.lastModified; document.getElementById("time").
+</script>
 </body>
 </html>
-

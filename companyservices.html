@@ -14,45 +14,45 @@
         h1 {
             text-align: center;
             background-color: #BC8F8F;
-            margin-top: 0; /* Reduced space above the title */
-            padding: 5px 0; /* Reduced padding for the title */
-            font-size: 36px; /* Increased font size for the title */
+            margin-top: 0;
+            padding: 5px 0;
+            font-size: 36px;
             color: black;
             font-family: 'Verdana', sans-serif;
         }
         .section {
-            padding: 10px 20px; /* Adjusted padding for less space */
+            padding: 10px 20px;
             background-color: #BC8F8F;
-            text-align: center; /* Center align content for even spacing */
+            text-align: left; /* Aligns text to the left */
         }
         .section-title {
             text-decoration: underline;
-            margin-bottom: 10px; /* Reduced space below section titles */
+            margin-bottom: 10px;
         }
-        ul {
+        ul, ol {
             list-style-type: disc;
             color: white;
-            padding-left: 20px; /* Ensure list is indented */
+            padding-left: 20px;
         }
         .bold {
             font-weight: bold;
         }
         p, span, a, font {
             font-family: 'Times New Roman', serif;
+            color: white; /* Ensures text is visible against the background */
         }
         .dish {
-            margin: 0 10px; /* Adjusted margins for even spacing of images */
-            display: inline-flex; /* Align images and text vertically */
-            flex-direction: column; /* Stack image and text */
-            align-items: center; /* Center text below image */
+            margin: 0 10px 20px 0; /* Adjusted margin for even spacing and alignment */
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
         }
         img {
-            max-width: 100%; /* Ensures images are not larger than their container */
-            height: auto; /* Keeps image aspect ratio */
+            max-width: 100%; /* Ensures images are responsive */
+            height: auto;
         }
         a {
-            color: white; /* Ensure links are white */
-            text-decoration: underline; /* Style for links */
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -116,48 +116,42 @@
     <h3 class="section-title">Available Dishes</h3>
     <div>
         <div class="dish">
-            <img src="hispanic_tacos.jpeg" alt="Hispanic Tacos" />
-            <span>Tacos</span>
-        </div>
-        <div class="dish">
-            <img src="hispanic_paella.jpeg" alt="Hispanic Paella" />
-            <span>Paella</span>
-        </div>
-        <div class="dish">
-            <img src="hispanic_empanadas.jpeg" alt="Hispanic Empanadas" />
-            <span>Empanadas</span>
-        </div>
+            <img src="hispanic_tacos.jpg" alt="Hispanic Tacos" height="200" width="200" />
+        <span>Tacos</span>
+    </div>
+    <div class="dish">
+        <img src="images/hispanic_paella.jpg" alt="Hispanic Paella" height="200" width="200" />
+        <span>Paella</span>
+    </div>
+    <div class="dish">
+        <img src="images/hispanic_empanadas.jpg" alt="Hispanic Empanadas" height="200" width="200" />
+        <span>Empanadas</span>
     </div>
 </div>
 
-<div class="section">
-    <h2 class="section-title bold">Customer Resources</h2>
-    <p>If you are interested in booking a class, please take a look at our pricing as well as our selection of chefs that will be instructing the classes.</p>
-    <h3 class="section-title bold">Steps to Take</h3>
-    <ol>
-        <li>Reflect on your lifestyle and decide how many courses you would like to take.</li>
-        <li>Take a look at our pricing page.</li>
-        <li>Choose a chef and type of cuisine.</li>
+<div class="section" style="background-color: #BC8F8F;">
+    <h2 class="section-title bold" style="font-family: Times New Roman, sans-serif; color: black; text-decoration: underline;">Customer Resources</h2>
+    <p style="font-style: italic; color: white; font-family: 'Times New Roman', serif;">If you are interested in booking a class, please take a look at our pricing as well as our selection of chefs that will be instructing the classes.</p>
+    <h3 class="section-title bold" style="font-family: Times New ROman, sans-serif; color: black; text-decoration: underline;">Steps to Take</h3>
+    <ol style="color: white; font-family: 'Times New Roman', serif; font-style: italic;">
+        <li>Reflect on your lifestyle and decide how many courses you would like to learn how to prepare</li>
+        <li>Take a look at our pricing page</li>
+        <li>Choose a chef and type of cuisine</li>
         <li>Contact us to reserve a booking!</li>
     </ol>
 </div>
-
 <!-- Links -->
-<p><u><b>Pricing of Cooking Classes:</b></u> <a href="https://docs.google.com/document/d/1TwQsSTvWRB6r8cQCkNjBxGLZXKldST9zT2xEOXs97ZI/edit?usp=sharing" target="_blank">Cooking Class Information</a></p>
+    <div style="clear:both;">
+        <br><br>
+     
+    <p><a href="mailto:pearsoni@purdue.edu" style="color: white; text-decoration: none; padding: 10px 20px; background-color: #BC8F8F; border: 1px solid white; border-radius: 5px;">Contact Us!</a></p>
 
-<h2><u><b>Download the List of our Chefs!</b></u></h2>
-<a href="Chefs.pdf" target="_blank">Chef List (PDF)</a>
-
-<p><a href="mailto:pearsoni@purdue.edu" style="text-decoration: none; padding: 10px 20px; background-color: #BC8F8F; border: 1px solid white; border-radius: 5px;">Contact Us!</a></p>
-
-<!-- Last Modified Date -->
-<p>This document was last modified:</p>
-<p id="time"></p>
-<script>
-let text = document.lastModified;
-document.getElementById("time").innerHTML = text;
-</script>
-
+    <!-- Last Modified Date -->
+This document was last modified:</p>
+<p id="time" style="font-size:vw;">
+    <script>
+    let text = document.lastModified; document.getElementById("time").innerHTML = text;
+    </script>
 </body>
 </html>
 
